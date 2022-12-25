@@ -1,0 +1,19 @@
+name: tf
+
+dependencies:
+  - python==3.7
+  - pip
+  - matplotlib
+  - opencv
+  - pip:
+    - tensorflow
+    - tensorflow-addons
+    - opencv-python
+    - numpy
+    - onnx
+    - matplotlib
+    - onnxruntime==1.12.0
+    - git+https://github.com/onnx/tensorflow-onnx
+    - onnxoptimizer
+    - ipykernel
+    - keras2onnx
