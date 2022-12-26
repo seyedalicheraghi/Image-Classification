@@ -1,7 +1,7 @@
 name: tf
 
 dependencies:
-  - python==3.7
+  - python
   - pip
   - matplotlib
   - opencv

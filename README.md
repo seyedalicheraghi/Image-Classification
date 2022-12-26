@@ -15,13 +15,14 @@
 ### Conda (Recommended)
 
 Create a conda environment called tf with all dependencies. This command prepare the environment for Flex-Logix scripts. 
-```commandline
-conda env create -tf.yml
-conda activate tf
+```commandline ```
+conda env create -f tfe.yml
+conda activate tfe
 
 python -m ipykernel install --name=tf
 
 ### Install requried libraries in your system following "Install Required Libraries.ipynb" instructions.
+
 #### What are the purposes of this Repo:
 * Step 1: Develope and train a very basic and simple classification model to differentiate between John Wick vs Rambo photos using "Training.ipynb" scripts.
 * Step 2: Convert the model I trained in previous step into two formats: ONNX and Keras using "Training.ipynb" scripts.
