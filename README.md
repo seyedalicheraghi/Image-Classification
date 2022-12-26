@@ -14,8 +14,11 @@
 ### Conda (Recommended)
 
 Create a conda environment called tfe with all dependencies. 
+
 ```commandline ```
+
 conda env create -f tfe.yml
+
 conda activate tfe
 
 python -m ipykernel install --name=tfe
