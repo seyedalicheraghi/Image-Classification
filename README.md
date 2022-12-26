@@ -10,11 +10,10 @@
 
 `verbose`: detailed output
 
-`change_ordering:` change ordering to HWC (experimental)
 ## Getting started
 ### Conda (Recommended)
 
-Create a conda environment called tf with all dependencies. This command prepare the environment for Flex-Logix scripts. 
+Create a conda environment called tfe with all dependencies. 
 ```commandline ```
 conda env create -f tfe.yml
 conda activate tfe
@@ -25,9 +24,16 @@ python -m ipykernel install --name=tfe
 
 #### What are the purposes of this Repo:
 * Step 1: Develope and train a very basic and simple classification model to differentiate between John Wick vs Rambo photos using "Training.ipynb" scripts.
+
+![alt text](model.png)
+
 * Step 2: Convert the model I trained in previous step into two formats: ONNX and Keras using "Training.ipynb" scripts.
+
 * Step 3: Evaluate the ONNX model to check if we loose accuracy in conversion step using "ONNX Evaluation.ipynb" scripts.
+
 * Step 4: Convert the ONNX model into TensorRT Engine using Google Colab and Inference the TRT model using "Convert ONNX to TRT.ipynb" scripts.
+
+After producing the ONNX model in step 2 and evaluating it in step 3, you need to copy the model into the google colab.
 
 Based on the model we evaluate, we can choose different form of accuracy measurement. 
 
