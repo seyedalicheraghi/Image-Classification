@@ -19,7 +19,7 @@ Create a conda environment called tf with all dependencies. This command prepare
 conda env create -f tfe.yml
 conda activate tfe
 
-python -m ipykernel install --name=tf
+python -m ipykernel install --name=tfe
 
 ### Install requried libraries in your system following "Install Required Libraries.ipynb" instructions.
 
